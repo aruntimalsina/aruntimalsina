@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arun Timalsina</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b169a27a7e.js" crossorigin="anonymous"></script>
+    <meta name="description" content="Arun Timalsina - Passionate Web Developer with expertise in HTML, CSS, JavaScript, React, and Angular.">
+    <meta name="keywords" content="Web Developer, HTML, CSS, JavaScript, React, Angular, Portfolio, Arun Timalsina">
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo" alt="Arun Timalsina Logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Arun Timalsina</span></h1>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/user.png" alt="Arun Timalsina">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>My name is Arun, a passionate web developer with over 2 years of experience in the field. I hold a Bachelor's degree in Computer Science and have honed my skills in various web technologies. I am proficient in HTML, CSS, JavaScript, and have experience working with frameworks like React and Angular. I am also familiar with backend technologies like Node.js and Express.js. My ability to create responsive and user-friendly websites has allowed me to work on a variety of projects, ranging from simple static websites to complex web applications. I am a quick learner, always eager to embrace new technologies and challenges in the ever-evolving web development landscape.</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="Skills">
+                            <ul>
+                                <li><span>HTML</span><br>I structure web pages using HTML</li>
+                                <li><span>CSS</span><br>I style web pages using CSS</li>
+                                <li><span>JavaScript</span><br>I create interactive web content with JavaScript</li>
+                                <li><span>React</span><br>I build user interfaces with React</li>
+                                <li><span>Angular</span><br>I develop web applications using Angular</li>
+                                <li><span>Node.js</span><br>I build server-side applications with Node.js</li>
+                                <li><span>Express.js</span><br>I create web application backends using Express.js</li>
+                            </ul>
+                        </div>  
+                        <div class="tab-contents" id="Experience">
+                            <ul>
+                                <li><span>2018-2020</span><br>I worked at XYZ Company</li>
+                                <li><span>2020-2021</span><br>I worked at ABC Corporation</li>
+                                <li><span>2021-Present</span><br>I am currently working at DEF Inc.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Education">
+                            <ul>
+                                <li><span>2010-2014</span><br>Bachelor's Degree in Computer Science, University A</li>
+                                <li><span>2014-2016</span><br>Master's Degree in Software Engineering, University B</li>
+                                <li><span>2016-2018</span><br>PhD in Artificial Intelligence, University C</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>  
+
+        <section id="services" class="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-laptop-code"></i>
+                        <h2>Web Design</h2>
+                        <p>I create beautiful and user-friendly websites that meet your business needs.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                    <div>
+                        <i class="fa-regular fa-font-awesome"></i>
+                        <h2>Web Development</h2>
+                        <p>I develop responsive and interactive websites using the latest web technologies.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-hammer"></i>
+                        <h2>Web Maintenance</h2>
+                        <p>I provide regular maintenance and updates to keep your website running smoothly.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="portfolio-list">
+                    <div class="work">
+                        <img src="images/work-1.png" alt="Social Media App">
+                        <div class="layer">
+                            <h3>Social Media App</h3>
+                            <p>Connecting people through this app</p>
+                            <a href="#"><i class="fa-solid fa-square-up-right"></i></a>
+                        </div>   
+                    </div>
+                    <div class="work">
+                        <img src="images/work-2.png" alt="E-commerce Website">
+                        <div class="layer">
+                            <h3>E-commerce Website</h3>
+                            <p>A platform to buy and sell products</p>
+                            <a href="#"><i class="fa-solid fa-square-up-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-3.png" alt="Portfolio Website">
+                        <div class="layer">
+                            <h3>Portfolio Website</h3>
+                            <p>Showcasing my projects and skills</p>
+                            <a href="https://github.com/aruntimalsina/myfirstweb"><i class="fa-solid fa-square-up-right"></i></a>
+                        </div>
+                    </div>
+                </div>  
+                <a href="#" class="btn">See More</a>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i> arun.timalsina90@gmail.com</p>
+                        <p><i class="fa-solid fa-square-phone"></i> +977-9841234567</p>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/aruntimalsina/"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href=""><i class="fa-brands fa-twitter"></i></a>
+                            <a href=""><i class="fa-brands fa-github"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        </div>
+                        <a href="images/my-cv.pdf" class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required pattern="[A-Za-z\s]+">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>&copy; 2024 Arun Timalsina. All Rights Reserved.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        var tabLinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabName) {
+            for (tablink of tabLinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabName).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyxceh2zrZvowIZ-CPniO7TgG4xuZe3jLudC04t9uxDiAMWtQb1s2Pc0jCL8SSCcAXX/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('msg')
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully!"
+                form.reset()
+                setTimeout(() => {
+                    msg.innerHTML = ""
+                }, 5000);
+                
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+    <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/6676b397eaf3bd8d4d134df0/1i0vqr275';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+</body>
+</html>
